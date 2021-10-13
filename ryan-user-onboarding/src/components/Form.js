@@ -34,7 +34,7 @@ export default function Form(props) {
                 <label>Terms
                     <input type="checkbox" name="terms" checked={values.terms} onChange={onChange}></input>
                 </label>
-                <button>Submit</button>
+                <button disabled={disabled}>Submit</button>
             </form>
         </div>
     )

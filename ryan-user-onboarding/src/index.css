@@ -38,3 +38,18 @@ button {
   background-color: wheat;
   box-shadow: 1px 1px 1px 1px brown;
 }
+.users {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: crimson;
+  margin: 10%;
+}
+.users h1 {
+  color: black;
+}
+.users h4, .user {
+  background-color: rgb(238, 241, 241);
+  width: 60%;
+  padding: 0 2%;
+}
