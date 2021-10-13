@@ -6,9 +6,10 @@ export default function Form(props) {
     const onChange = (e) => {
         // Pull the data out of the event object after the user has made a change
         const { name, value, checked, type } = e.target
-        console.log('checked',checked)
+        // if the value type is a checkbox than use checked instead of value
+        const theValue = type === 'checkbox' ? checked : value
         // setFormValues(...formValues, [name]: value)
-        change(name, value)
+        change(name, theValue)
     }
 
     const onSubmit = (e) => {

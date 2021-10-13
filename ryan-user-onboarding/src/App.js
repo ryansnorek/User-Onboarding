@@ -41,7 +41,9 @@ function App() {
     }
     axios.post(`https://reqres.in/api/users`, newUser)
       .then(res => {
-        console.log(res)
+        // set users state with the new data injected before the users data
+        setUsers([res.data, ...users])
+        console.log(users)
       })
       .catch(err => console.log(err))
       .finally(() => setFormValues(initialFormValues))
