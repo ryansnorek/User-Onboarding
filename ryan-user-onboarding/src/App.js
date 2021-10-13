@@ -29,6 +29,8 @@ function App() {
     setFormValues({ ...formValues, [name]: value })
   }
 
+  // Each time the form values change run them through the schema for validation
+  // If they are valid then allow the user to submit
   useEffect(() => {
     schema.isValid(formValues).then(valid => setDisabled(!valid))
   }, [formValues])
