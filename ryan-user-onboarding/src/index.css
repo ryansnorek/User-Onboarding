@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  background-color: paleturquoise;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10%;
+  border: 1px solid grey;
+  width: 40%;
+  background-color: white;
+}
+label {
+  padding: 3%;
+  background-color: white;
+}
+input {
+  background-color: rgb(238, 241, 241);
+  padding: 1%;
+}
+button {
+  margin: 6%;
+  background-color: wheat;
+  box-shadow: 1px 1px 1px 1px brown;
+}
