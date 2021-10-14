@@ -31,9 +31,9 @@ describe('Type into the input fields and submit form', () => {
 
     it('can check the terms box', () => {
         termsInput()
-            .should('have.checked', 'false')
-            .click()
-            .should('have.checked', 'true')
+            .should('not.be.checked')
+            .check()
+            .should('be.checked')
     })
 
     it('can type into the input fields and submit', () => {
@@ -54,10 +54,5 @@ describe('Type into the input fields and submit form', () => {
         passwordInput().should('have.value', '')
         submitButton().should('be.disabled')
     })
-
-    
-    
-
-    
 
 })
