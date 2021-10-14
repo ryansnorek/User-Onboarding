@@ -9,6 +9,7 @@ export default function Form(props) {
         // if the value type is a checkbox than use checked instead of value
         const theValue = type === 'checkbox' ? checked : value
         // setFormValues(...formValues, [name]: value)
+        console.log(checked)
         change(name, theValue)
     }
 
@@ -34,7 +35,7 @@ export default function Form(props) {
                 <label>Terms
                     <input type="checkbox" name="terms" checked={values.terms} onChange={onChange}></input>
                 </label>
-                <button disabled={disabled}>Submit</button>
+                <button id='submit' disabled={disabled}>Submit</button>
             </form>
         </div>
     )

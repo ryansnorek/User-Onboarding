@@ -13,13 +13,11 @@ const initialFormValues = {
   terms: false,
 }
 
-const initialDisabled = true
-
 function App() {
 
   const [formValues, setFormValues] = useState(initialFormValues)
   const [users, setUsers] = useState([])
-  const [disabled, setDisabled] = useState(initialDisabled)
+  const [disabled, setDisabled] = useState(false)
 
   const inputChange = (name, value) => {
     // Every time the input changes we will validate the change
